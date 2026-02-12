@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+
+}
