@@ -5,20 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="style.css">
-
-        <title>Image Search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Google Image Search</title>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="index.html">Google Search</a></li>
+                <li><a href="index.html">back to Google Search</a></li>
             </ul>
         </nav>
         <div class="form-container">
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
+            <form action="https://www.google.com/search" class="search-form">
+                <input class="search-bar" type="text" name="q">
                 <input hidden type="text" name="udm" value="2">
-                <input type="submit" value="Google Search">
+                <div class="search-buttons">
+                    <input class="button" type="submit" value="Image Search">
+                </div>
             </form>
         </div>
     </body>

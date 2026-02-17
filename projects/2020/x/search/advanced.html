@@ -5,19 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="style.css">
-
-        <title>Advanced Search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Google Advanced Search</title>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="index.html">Google Search</a></li>
+                <li><a href="index.html">back to Google Search</a></li>
             </ul>
         </nav>
-        <div class="form-container">
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
+        <div class="headline">
+            <h1>Advanced Search</h1>
+        </div>
+        <div class="advanced-container">
+            <form action="https://www.google.com/search" class="advanced-search-form">
+                <div class="grid-header">
+                    Find pages with ...
+                </div>
+                <div>
+                    <label for="all">all these words:</label>
+                </div>
+                <div>
+                    <input id="all" type="text" name="as_q">
+                </div>
+                <div></div>
+                <div>
+                    <label for="exact">this exact word or phrase:</label>
+                </div>
+                <div>
+                    <input id="exact" type="text" name="as_epq">
+                </div>
+                <div></div>
+                <div>
+                    <label for="any">any of these words:</label>
+                </div>
+                <div>
+                    <input id="any" type="text" name="as_oq">
+                </div>
+                <div></div>
+                <div>
+                    <label for="none">none of these words:</label>
+                </div>
+                <div>
+                    <input id="none" type="text" name="as_eq">
+                </div>
+                <div class="grid-button">
+                    <input class="button" type="submit" value="Advanced Search">
+                </div>
             </form>
         </div>
     </body>

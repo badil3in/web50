@@ -5,20 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Search</title>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="imagesearch.html">Image Search</a></li>
-                <li><a href="advanced.html">Advanced Search</a></li>
+                <li><a href="imagesearch.html">Image</a></li>
+                <li><a href="advanced.html">Advanced</a></li>
             </ul>
         </nav>
         <div class="form-container">
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
+            <form action="https://www.google.com/search" class="search-form">
+                <input class="search-bar" type="text" name="q">
+                <div class="search-buttons">
+                    <input class="button" type="submit" value="Google Search">
+                    <input class="button" name="btnI" type="submit" value="I'm Feeling Lucky">
+                </div>
             </form>
         </div>
     </body>

@@ -1,6 +1,23 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: #d93025;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 35px;
+}
+
 nav {
     display: flex;
     justify-content: end;
+    padding: 6px;
 }
 
 ul {
@@ -13,15 +30,124 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 ul li a:hover {
     text-decoration: underline;
 }
+ul li a:visited {
+    color:rgba(0,0,0,.87);
+}
+
+.advanced-container {
+    max-width: 1140px;
+    margin: 40px 2% 0 45px;
+}
+
+.advanced-search-form {
+    display: grid;
+    grid-template-columns: 20% auto 30%;
+}
+
+.advanced-search-form div {
+    align-content: center;
+    height: 42px;
+}
+
+.advanced-search-form div input {
+    border: 1px solid #d9d9d9;
+    border-radius: 1px;
+    border-top: 1px solid #c0c0c0;
+    height: 25px;
+    padding: 1px 8px;
+    width: 100%;
+}
+.advanced-search-form div input:focus-visible {
+    border-radius: 1px;
+    border: 1px solid #4d90fe;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    outline: none;
+}
+
+.button {
+    cursor: pointer;
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 8px;
+    height: 36px;
+    margin: 11px 4px;
+    min-width: 54px;
+    max-width: 128px;
+}
+
+.button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
 
 .form-container {
     display: flex;
     justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-header {
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto;
+    text-align: end;
+    width: 100%;
 
 }
+
+.grid-button input {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed !important;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 700;
+    height: 30px !important;
+}
+
+.headline {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-bar {
+    border: 1px solid #dadce0;
+    border-radius: 26px;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+    font-size: 16px;
+    min-height: 50px;
+    padding: 0 2rem;
+}
+
+.search-bar:hover {
+    box-shadow: 0 2px 8px 1px rgba(64,60,67,.24);
+}
+
+.search-bar:focus-visible {
+    outline: none;
+}
+
+.search-buttons {
+    margin: 18px auto;
+}
+
