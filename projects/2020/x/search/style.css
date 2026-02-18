@@ -120,6 +120,23 @@ ul li a:visited {
     border-bottom: 1px solid #eaeaea;
 }
 
+.icon {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.input {
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    width: 90%;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
 .search-form {
     display: flex;
     flex-direction: column;
@@ -131,18 +148,27 @@ ul li a:visited {
     border: 1px solid #dadce0;
     border-radius: 26px;
     box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+    display: flex;
+    flex-direction: row;
     font-size: 16px;
     min-height: 50px;
-    padding: 0 2rem;
+    padding: 0 1rem;
+}
+
+.search-bar svg {
+    margin-top: 3px;
+    fill: #9aa0a6;
+    height: 20px;
+    width: 20px;
 }
 
 .search-bar:hover {
     box-shadow: 0 2px 8px 1px rgba(64,60,67,.24);
 }
-
+/* 
 .search-bar:focus-visible {
     outline: none;
-}
+} */
 
 .search-buttons {
     margin: 18px auto;
